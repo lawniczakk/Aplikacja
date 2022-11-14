@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello Worlddddd!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="26dp"
+        android:paddingEnd="26dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-228dp">
+
+<!--        <TextView-->
+<!--            android:id="@+id/text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Sport na PWr" />-->
+
+        <Button
+            android:id="@+id/addActivityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addActivity"
+            android:text="Add activity" />
+
+        <Button
+            android:id="@+id/openCalendarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openCalendar"
+            android:text="Calendar" />
+
+        <Button
+            android:id="@+id/openDietButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openDiet"
+            android:text="Diet" />
+
+        <Button
+            android:id="@+id/openStepsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addSteps"
+            android:text="Steps" />
+
+        <Button
+            android:id="@+id/openPointsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openPoints"
+            android:text="Points" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

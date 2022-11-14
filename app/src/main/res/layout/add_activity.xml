@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+
+    <DatePicker
+        android:id="@+id/simpleDatePicker"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Rodzaj aktywnosci" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/swim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swimming"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/cycling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cycling"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end|bottom"-->
+<!--        android:src="@android:drawable/ic_input_add"-->
+<!--        android:layout_margin="16dp" />-->
+
+
+
+
+
+</LinearLayout>
